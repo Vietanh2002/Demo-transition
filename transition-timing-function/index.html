@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Transition</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="transition">
+    <div class="ball--linear ball"><span> running</span></div>
+    <div class="ball--ease ball"><span> ease </span></div>
+    <div class="ball--ease-in ball"><span> ease-in </span></div>
+    <div class="ball--ease-out ball"><span> ease-out </span></div>
+    <div class="ball--cubic-bezier ball"><span> cubic-bezier </span></div>
+  </div>
+
+
+  <ul class="explantation-list">
+      <p class="text-heading">Transition-timing-function giúp chúng ta điều chỉnh được
+          nhịp độ di chuyển của đối tượng có Transition
+      </p>
+      <li class="explantation-iteam">
+          <p>  Transition-timing-function : "linear" Quả bóng sẽ có cùng tốc độ chạy
+              từ đầu cho đến cuối
+          </p>
+      </li>
+      <li class="explantation-iteam">
+          <p>  Transition-timing-function :" ease" Quả bóng sẽ có hiệu ứng chuyển tiếp với bắt đầu chậm, sau đó nhanh, sau đó kết thúc chậm (đây là mặc định)
+          </p>
+      </li>
+      <li class="explantation-iteam">
+          <p>  Transition-timing-function : "ease-in" Quả bóng sẽ có tốc độ khởi đầu chậm
+          </p>
+      </li>
+      <li class="explantation-iteam">
+          <p>  Transition-timing-function : "ease-out" Quả bóng sẽ có tốc độ kết thúc chậm
+          </p>
+      </li>
+      <li class="explantation-iteam">
+          <p>  Transition-timing-function : "cubic-bezier(x1, y1, x2, y2)"  các giá trị trong khoảng từ 0->1
+              ta có thể điều chính tốc độ  theo ý mình
+          </p>
+      </li>
+  </ul>
+</body>
+</html>
