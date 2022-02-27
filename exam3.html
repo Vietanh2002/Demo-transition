@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  transition: height 2s;
+  text-align: center;
+}
+
+#div1 {
+  color: #fff;
+  transition-timing-function: linear;
+  background-color: #EDB64C;
+}
+#div2 {
+  color: #fff;
+  transition-timing-function: ease;
+  background-color: #F74F4F;
+}
+#div3 {
+  color: #fff;
+  background-color: #7453E0;
+  transition-timing-function: ease-in;
+}
+#div4 {
+  color: #fff;
+  background-color: #4FF7F0;
+  transition-timing-function: ease-out;
+}
+#div5 {
+  color: #fff;
+  background-color: #CAF06E;
+  transition-timing-function: ease-in-out;
+}
+#div6 {
+  color: #fff;
+  background-color: #9853ED;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#div1:hover,#div2:hover,#div3:hover,#div4:hover,#div5:hover,#div6:hover {
+  height: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div class="container">
+  <div id="div1">linear</div><br>
+  <div id="div2">ease</div><br>
+  <div id="div3">ease-in</div><br>
+  <div id="div4">ease-out</div><br>
+  <div id="div5">ease-in-out</div><br>
+  <div id="div6">cubic-bezier</div>
+</div>
+
+</body>
+</html>
+
+
